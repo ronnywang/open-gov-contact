@@ -1,0 +1,22 @@
+{
+    "name":  "交通部部長(民意)信箱",
+    "mainpage-url": "http://www.motc.gov.tw/ch/main.jsp?prg=../ap/mailbox.jsp&maintitle=%E9%83%A8%E9%95%B7(%E6%B0%91%E6%84%8F)%E4%BF%A1%E7%AE%B1",
+    "form-url": "http://poms.motc.gov.tw/webpages",
+    "form-post-url": "http://poms.motc.gov.tw/WebPages/pomsp001v01/Create",
+    "required_fields": ["cname", "email", "subject", "content"],
+    "fields": [
+        {"name": "tot", "title": "不知道幹嘛的", "type": "hidden", "value": "55"},
+        {"name": "cname", "title": "姓名", "category": "name", "length": 20},
+        {"name": "email", "title": "電子郵件", "category": "email", "length": 50},
+        {"name": "subject", "title": "標題", "category": "title", "length": 100},
+        {"name": "content", "title": "內容", "category": "body", "length": 1000, "type": "textarea"},
+        {"name": "address", "title": "地址", "category": "address", "length": 100},
+        {"name": "tel", "title": "電話", "category": "tel", "length": 50}
+    ],
+    "captcha": {
+        "type": "url-text",
+        "url": "http://poms.motc.gov.tw/pomsp001v01/CaptchaAcc",
+        "hint": "請填寫下列算式答案",
+        "name": "CaptchaText"
+    }
+}
